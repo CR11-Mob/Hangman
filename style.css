@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(163, 191, 130, 1),
+    rgba(84, 98, 67, 1)
+  );
+}
+
+h1 {
+  margin: 0px;
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 2.5rem;
+  /* border-bottom: 2px solid red; */
+}
+
+h3 {
+  margin: 0px;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 60%;
+  border: 15px solid rgba(84, 98, 67, 1);
+  border-radius: 20px;
+  background: whitesmoke;
+  /* box-shadow: 5px 5px 20px 2px rgba(41, 48, 33, 1) */
+}
+
+#heading {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: rgba(41, 48, 33, 1);
+}
+
+#mainContent {
+  display: flex;
+  height: 80%;
+  width: 100%;
+}
+
+#wordArea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+#gameOver {
+  display: none;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+  color: rgba(180, 70, 53, 1);
+  text-align: center;
+  justify-content: center;
+}
+
+#gameWin {
+  display: none;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+  color: rgba(84, 98, 67, 1);
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+#hiddenWords {
+  display: flex;
+  height: 10%;
+  width: 90%;
+  justify-content: center;
+}
+
+#hiddenWords > div{
+  display: flex;
+  height: 100%;
+  width: 6%;
+  /* min-width: 42px; */
+  justify-content: center;
+  margin-right: 10px;
+  border-bottom: 3px solid rgba(41, 48, 33, 1);
+  border-radius: 1px;
+}
+
+#hiddenWords > div > span {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: rgba(41, 48, 33, 1);
+  width: 100%;
+  text-align: center;
+}
+
+
+#hangmanArea {
+  /* display: flex; */
+  height: 70%;
+  width: 20%;
+}
+
+#stand-0 {
+  width: 100%;
+  height: 100%;
+  background: url("/images/Stand.png");
+  background-repeat: no-repeat;
+  background-position: -100px 40px
+}
+#stand-1 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url("/images/Hangman-with-head.png");
+  background-repeat: no-repeat;
+  background-position: -100px 40px
+}
+#stand-2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url("/images/Hangman-with-torso.png");
+  background-repeat: no-repeat;
+  background-position: -100px 40px
+}
+#stand-3 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url("/images/Hangman-with-left-arm.png");
+  background-repeat: no-repeat;
+  background-position: -100px 40px
+}
+#stand-4 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url("/images/Hangman-with-right-arm.png");
+  background-repeat: no-repeat;
+  background-position: -100px 40px
+}
+#stand-5 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url("/images/Hangman-with-left-leg.png");
+  background-repeat: no-repeat;
+  background-position: -100px 40px
+}
+#stand-6 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url("/images/Hangman-with-right-leg.png");
+  background-repeat: no-repeat;
+  background-position: -100px 40px
+}
